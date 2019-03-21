@@ -1,4 +1,5 @@
 function testmain() 
+% Test private projects
 % Create a runner that runs completely silently but still produces a valid TestResult 
 runner = matlab.unittest.TestRunner.withNoPlugins; 
 
