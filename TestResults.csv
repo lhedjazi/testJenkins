@@ -1,0 +1,3 @@
+Name,Passed,Failed,Incomplete,Duration,Details
+"SolverTest/testRealSolution",1,0,0,0.537627409343928,
+"SolverTest/testImaginarySolution",1,0,0,0.0115778271598321,
