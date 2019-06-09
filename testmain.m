@@ -13,4 +13,5 @@ result = runner.run(testsuite('solverTest.m'));
 rt = table(result); 
 sortrows(rt, 'Duration'); 
 writetable(rt, 'TestResults.csv', 'QuoteStrings', true); 
+exit;
 end 
