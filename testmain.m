@@ -2,7 +2,8 @@ function testmain()
 % Test private projects
 % Create a runner that runs completely silently but still produces a valid TestResult 
 
-runner = matlab.unittest.TestRunner.withNoPlugins; 
+%%%%%%%%%%%%%% Using Unit testRunner %%%%%%%%%%%%%%%%%%%
+% runner = matlab.unittest.TestRunner.withNoPlugins; 
 
 % OR 
 
@@ -10,7 +11,13 @@ runner = matlab.unittest.TestRunner.withNoPlugins;
 % runner = matlab.unittest.TestRunner.withTextOutput; 
 
 
-result = runner.run(testsuite('solverTest.m')); 
+% result = runner.run(testsuite('solverTest.m')); 
+
+%%%%%%%%%%%%%%% Use run %%%%%%%%
+testCase = SolverTest;
+result = run(testCase)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 rt = table(result); 
 sortrows(rt, 'Duration'); 
 writetable(rt, 'TestResults.csv', 'QuoteStrings', true); 
