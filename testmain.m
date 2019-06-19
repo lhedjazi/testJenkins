@@ -8,14 +8,14 @@ function testmain()
 % OR 
 
 % Create a runner that produces familiar text output. 
-% runner = matlab.unittest.TestRunner.withTextOutput; 
+runner = matlab.unittest.TestRunner.withTextOutput; 
 
 
-% result = runner.run(testsuite('solverTest.m')); 
+result = runner.run(testsuite('solverTest.m')); 
 
 %%%%%%%%%%%%%%% Use run %%%%%%%%
-testCase = SolverTest;
-result = run(testCase)
+% testCase = SolverTest;
+% result = run(testCase)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 rt = table(result); 
