@@ -11,7 +11,7 @@ function testmain()
 runner = matlab.unittest.TestRunner.withTextOutput; 
 
 
-result = runner.run(testsuite('solverTest.m')); 
+result = runner.run(testsuite('solverTest.m'))
 
 %%%%%%%%%%%%%%% Use run %%%%%%%%
 % testCase = SolverTest;
