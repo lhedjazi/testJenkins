@@ -7,15 +7,10 @@ function testmain()
 % OR 
 
 % Create a runner that produces familiar text output. 
-% runner = matlab.unittest.TestRunner.withTextOutput; 
-% 
-% 
-% result = runner.run(testsuite('solverTest.m'))
+runner = matlab.unittest.TestRunner.withTextOutput; 
 
-%%%%%%%%%%%%%%% Use run %%%%%%%%
-testCase = SolverTest;
-result = run(testCase)
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+result = runner.run(testsuite('solverTest.m'))
 
 rt = table(result); 
 sortrows(rt, 'Duration'); 
