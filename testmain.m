@@ -3,12 +3,12 @@ function testmain()
 % Create a runner that runs completely silently but still produces a valid TestResult 
 
 %%%%%%%%%%%%%% Using Unit testRunner %%%%%%%%%%%%%%%%%%%
-runner = matlab.unittest.TestRunner.withNoPlugins; 
+% runner = matlab.unittest.TestRunner.withNoPlugins; 
 
 % OR 
 
 % Create a runner that produces familiar text output. 
-% runner = matlab.unittest.TestRunner.withTextOutput; 
+runner = matlab.unittest.TestRunner.withTextOutput; 
 
 
 result = runner.run(testsuite('solverTest.m'))
