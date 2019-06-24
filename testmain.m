@@ -11,7 +11,6 @@ function testmain()
 
 runner = matlab.unittest.TestRunner.withTextOutput; 
 
-
 result = runner.run(testsuite('solverTest.m'))
 
 rt = table(result); 
